@@ -19,7 +19,7 @@ int main(int argc, char* argv[]){
 	printf("No of blocks:%d\n",filestat.st_blocks);
 	printf("Time of last access:%d\n",filestat.st_atime);
 	printf("Time of last modification:%d\n",filestat.st_mtime);
-	printf("Time of last change:%d\n",filestat.st_ctime);
+	// printf("Time of last change:%d\n",filestat.st_ctime);
 	getchar();
 	return 0;
 }
