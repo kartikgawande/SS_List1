@@ -11,25 +11,25 @@ int main(int argc, char* argv[]){
 	printf("statusFlag:%d\n", statusFlag);
 	printf("accessMode:%d\n", accessMode);
 	
-	/*switch(accessMode){
+	switch(accessMode){
 		case O_RDONLY:
-			printf("Read only.");
+			printf("Read only.\n");
 			break;
 		case O_WRONLY:
-			printf("Write only.");
+			printf("Write only.\n");
 			break;
 		case O_RDWR:
-			printf("Read and write.");
+			printf("Read and write.\n");
 			break;
 		default:
-			printf("Other modes.");
+			printf("Other modes.\n");
 			break;
-	}*/
+	}
 	
-	if(accessMode==O_RDONLY)printf("Read only.\n");
+	/*if(accessMode==O_RDONLY)printf("Read only.\n");
 	else if(accessMode==O_WRONLY)printf("Write only.\n");
 	else if(accessMode==O_RDWR)printf("Read and write only.\n");
-	else printf("Other mode.\n");
+	else printf("Other mode.\n");*/
 	close(fd);
 	return 0;
 }
