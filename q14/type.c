@@ -5,7 +5,7 @@
 int main(int argc, char* argv[]){
 	char* file = argv[1];
 	struct stat finfo;
-	stat(file, &finfo);
+	lstat(file, &finfo);
 	
 	if(S_ISREG(finfo.st_mode)) printf("Regular.");
 	else if(S_ISDIR(finfo.st_mode)) printf("Directory.");
